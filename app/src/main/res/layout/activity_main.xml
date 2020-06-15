@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital Manager"
+        android:textColor="#ffee58"
+        android:textSize="30sp"
+        app:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <Button
+        android:id="@+id/new_user"
+        android:layout_width="189dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFEE58"
+        android:text="New Patient"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/Old_user"
+        android:layout_width="189dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffb300"
+        android:text="Old Patient"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/new_user"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/new_user"
+        app:layout_constraintTop_toBottomOf="@+id/new_user"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/earning_teller"
+        android:layout_width="189dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="44dp"
+        android:background="#dd2c00"
+        android:text="Earnings till now"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Old_user"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Old_user"
+        app:layout_constraintTop_toBottomOf="@+id/Old_user"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/earning_reset"
+        android:layout_width="189dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="44dp"
+        android:background="#dd2c00"
+        android:text="Reset earning"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/earning_teller"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/earning_teller"
+        app:layout_constraintTop_toBottomOf="@+id/earning_teller" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="189dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="44dp"
+        android:background="#009688"
+        android:text="About the Developers"
+        app:layout_constraintEnd_toEndOf="@+id/earning_reset"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/earning_reset"
+        app:layout_constraintTop_toBottomOf="@+id/earning_reset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

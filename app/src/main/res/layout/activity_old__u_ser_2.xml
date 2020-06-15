@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Old_USer_2"
+    android:background="#000">
+
+    <Button
+        android:id="@+id/Nurse"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:background="#0097A7"
+        android:text="Add Nurse Visit"
+        app:layout_constraintEnd_toEndOf="@+id/detail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/detail"
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
+
+    <Button
+        android:id="@+id/DocVisit"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:background="#0097A7"
+        android:text="Add Doctor Visit"
+        app:layout_constraintEnd_toEndOf="@+id/Nurse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Nurse"
+        app:layout_constraintTop_toBottomOf="@+id/Nurse" />
+
+    <Button
+        android:id="@+id/AddTest"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:background="#0097A7"
+        android:text="Add Blood Test"
+        app:layout_constraintEnd_toEndOf="@+id/DocVisit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DocVisit"
+        app:layout_constraintTop_toBottomOf="@+id/DocVisit" />
+
+    <Button
+        android:id="@+id/Discharge"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:background="#558B2F"
+        android:text="Discharge Patiernt"
+        app:layout_constraintEnd_toEndOf="@+id/AddTest"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddTest"
+        app:layout_constraintTop_toBottomOf="@+id/AddTest" />
+
+    <Button
+        android:id="@+id/ToOLd"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:background="#D84315"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/Discharge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Discharge"
+        app:layout_constraintTop_toBottomOf="@+id/Discharge" />
+
+    <Button
+        android:id="@+id/detail"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFEB3B"
+        android:text="Detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
